@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&family=Comfortaa:wght@500&family=Comforter&family=Fredoka&family=Grenze+Gotisch:wght@400;500&family=Montserrat+Alternates&family=Montserrat:wght@500&family=Rock+Salt&family=Ubuntu&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        nav {
+            height: 69px;
+            background-color: rgb(155, 72, 72);
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            color: white;
+        }
+
+        .brand img {
+            width: 45px;
+            margin: 7px 0 0 9px;
+            margin-left: 1px;
+            padding: 4px;
+        }
+
+        .brand {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 29px;
+            text-transform: capitalize;
+            margin-top: 4px;
+            margin-left: 20px;
+        }
+
+        .nav {
+            margin-left: 55px;
+            font-size: 22px;
+            letter-spacing: 0.11em;
+            margin-top: 7px
+        }
+
+        .nav:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            color: grey;
+        }
+
+        .container {
+            min-height: 76vh;
+            background-color: black;
+            color: #fff;
+            display: flex;
+            margin: 22px auto;
+            width: 77%;
+            border-radius: 13px;
+            background: url('bg.jpg')no-repeat center center/cover;
+        }
+
+        .container h1 {
+            padding: 20px;
+            margin-left: 10px;
+        }
+
+        .bottom {
+            position: sticky;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            height: 95px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* FLEX-DIRECTION-COLUMN isliye kiya kyoki play/foreward/backward wale buttons theek range ke niche aa jae */
+            flex-direction: column;
+        }
+
+        .Songs {
+            width: 126%;
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            margin: 4px 0 0 0;
+            margin-bottom: 6px;
+        }
+
+        .icons i {
+            cursor: pointer;
+            letter-spacing: 0.401em;
+        }
+
+        .songsItems {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 55px;
+            /* width: 100%; */
+            background-color: #fff;
+            color: black;
+            margin-left: 19px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+
+        .songsItems img {
+            height: 51px;
+            width: 53px;
+            margin: 0 0 0 30px;
+            margin-top: 3px;
+            border-radius: 24px;
+        }
+
+        .songsItems i {
+            margin-left: 9px;
+        }
+
+        .uray {
+            font-size: 32px;
+        }
+
+        .number {
+            font-size: 19px;
+        }
+
+        .songListPlay {
+            margin-right: 17px;
+        }
+
+        .songInfo {
+            position: absolute;
+            left: 12vw;
+            /* bottom: 12px; */
+        }
+
+        .songInfo img {
+            opacity: .4;
+            transition: opacity 1s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Image Loading"> Spotify</li>
+            <li class="nav">Home</li>
+            <li class="nav">About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songsList">
+            <h1>Best of NCS - NonCopyRight Songs</h1>
+            <div class="Songs">
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">Blinding Lights</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">I Can't Tell You Why</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">Nothing Else Matters</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">High Hopes</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">Hammer to Fall</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">Bohemian Rhapsody</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">Hotel California</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+                <div class="songsItems">
+                    <img src="cover.jpg" alt="">
+                    <span class="uray">Wonderwall</span>
+                    <span class="songListPlay"><span class="number">05:34</span><i class="fa fa-play"></i></span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fa fa-2x fa-forward"></i>
+            <i class="fa fa-2x fa-play"></i>
+            <i class="fa fa-2x fa-backward"></i>
+        </div>
+        <div class="songInfo">
+            <img src="gif.gif" width="77px">
+        </div>
+    </div>
+
+
+    <script>
+        console.log('welcome to spotify');
+        let audioElement = new Audio('ncs.mp3');
+        audioElement.play();
+
+    </script>
+</body>
+
+</html>
